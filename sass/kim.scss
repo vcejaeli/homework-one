@@ -16,14 +16,13 @@
     }
 
     &__header {
-        color: $blue;
+        color: #0688f3d7;
     }
     &__headerAndDesc {
         height: auto;
         max-width: 600px;
         text-align: left;
     }
-
     &__img {
         background-image: url(../images/kimFaceBw.png);
         background-position: center;
@@ -35,7 +34,38 @@
     }
 }
 
-
-
 // need to add resize values
 //why are variables not WORKING 
+
+@media (max-width: 1000px) {
+    .kim {
+        background-image: url(../images/verticalPigBw.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        min-height: 100%;
+        
+        &__content {
+            display: inline-block;
+        }
+        &__header {
+            text-align: center;
+            color: #fff;
+        }
+        &__headerAndDesc {
+            text-align: left;
+            // background-color: rgb(255, 255, 255);
+            background-color: #0688f3f1;
+            color: #fff;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        &__img {
+            margin: 0 auto;
+        }
+    }
+}

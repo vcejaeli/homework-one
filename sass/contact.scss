@@ -8,7 +8,6 @@
     align-items: center;
     justify-content: space-evenly;
     
-
     &__content {
         min-height: 650px;
         width: 100%;
@@ -16,7 +15,6 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        
     }
     &__left {
         min-height: 800px;
@@ -80,6 +78,28 @@
         }
         .formCta:active{
             outline: none;
+            background-color: #fff;
+            transition: .5s;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .contact {
+
+        &__content {
+            display: inline-block;
+        }
+        &__left {
+            width: 100%;
+        }
+        &__right {
+            width: 100%;
+        }
+        &__form {
+            .inputBoxes {
+                width: 80%;
+            }
         }
     }
 }

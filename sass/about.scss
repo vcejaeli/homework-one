@@ -43,5 +43,23 @@
     }
 }
 
-
+//not sure why about is not linking in html
 //need to add resize
+
+@media (max-width: 1000px) {
+    .about {
+        // background-color: wheat;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+
+        &__content {
+            display: inline-block;
+        }
+        &__img {
+            width: 100%;
+        }
+    }
+}

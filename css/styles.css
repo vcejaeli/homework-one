@@ -64,6 +64,16 @@
   background-color: royalblue;
 }
 
+@media (max-width: 800px) {
+  .landing__headerOne {
+    font-weight: 700;
+    font-size: 100px;
+  }
+  .landing__headerTwo {
+    line-height: 75px;
+    font-weight: 500;
+  }
+}
 .kim {
   margin: 0 auto;
   padding: 30px;
@@ -84,6 +94,9 @@
   max-width: 98%;
   height: 250px;
 }
+.kim__header {
+  color: #0688f3d7;
+}
 .kim__headerAndDesc {
   height: auto;
   max-width: 600px;
@@ -98,6 +111,42 @@
   width: 200px;
 }
 
+@media (max-width: 1000px) {
+  .kim {
+    background-image: url(../images/verticalPigBw.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    min-height: 100%;
+  }
+  .kim__content {
+    display: inline-block;
+  }
+  .kim__header {
+    text-align: center;
+    color: #fff;
+  }
+  .kim__headerAndDesc {
+    text-align: left;
+    background-color: #0688f3f1;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .kim__img {
+    margin: 0 auto;
+  }
+}
 .about {
   min-height: calc(100vh - 50px);
   max-width: 100%;
@@ -140,6 +189,26 @@
   width: 90%;
 }
 
+@media (max-width: 1000px) {
+  .about {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .about__content {
+    display: inline-block;
+  }
+  .about__img {
+    width: 100%;
+  }
+}
 .contact {
   min-height: calc(100vh - 50px);
   width: 100%;
@@ -236,8 +305,25 @@
 }
 .contact__form .formCta:active {
   outline: none;
+  background-color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
+@media (max-width: 900px) {
+  .contact__content {
+    display: inline-block;
+  }
+  .contact__left {
+    width: 100%;
+  }
+  .contact__right {
+    width: 100%;
+  }
+  .contact__form .inputBoxes {
+    width: 80%;
+  }
+}
 .gallery {
   min-height: calc(100vh - 50px);
   width: 100%;
@@ -399,6 +485,10 @@ h1, h2, h3, h4, h5, h6, p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .nav__links li {
+    display: inline-block;
+    padding: 0px 15px;
+  }
 }
 footer {
   min-height: 50px;
@@ -415,4 +505,11 @@ footer {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin-top: 30px;
+}
+
+@media (max-width: 800px) {
+  footer {
+    text-align: center;
+    font-size: 12px;
+  }
 }

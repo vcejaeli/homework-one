@@ -22,7 +22,7 @@
         height: auto;
     }
     &__bothHeadings {
-        background-color: $blue;
+        background-color: #0688f3d7;
         // border-radius: 5px;
         padding: 20px;
         margin: 0 auto;
@@ -55,7 +55,7 @@
     }
     //wouldn't this also go inside of content?
     &__button {
-        background-color: $pink;
+        background-color: #FF00AA;
         color: #fff;
         text-decoration: none;
         padding: 8px 25px;
@@ -70,6 +70,21 @@
             background-color: royalblue;
         }
     }
+}
 
 
+@media (max-width: 800px) {
+    .landing {
+        
+        &__headerOne {
+            font-weight: 700;
+            font-size: 100px;
+            // super useful for reducing heights between headers
+            // line-height: 80px;
+        }
+        &__headerTwo {
+            line-height: 75px;
+            font-weight: 500;
+        }
+    }
 }
