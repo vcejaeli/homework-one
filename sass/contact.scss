@@ -1,0 +1,85 @@
+.contact {
+    // background-color: plum;
+    min-height: calc(100vh - 50px);
+    width: 100%;
+    padding: 30px 30px 14px 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+    &__content {
+        min-height: 650px;
+        width: 100%;
+        // background-color: rgba(255, 166, 0, 0.582);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    &__left {
+        min-height: 800px;
+        width: 50%;
+        background-color: #000;
+        display: inline-block;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    &__right {
+        min-height: 800px;
+        width: 50%;
+        background-color: #fff;
+        background-image: url(../images/verticalTwoFriendsBw.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 60%;
+    }
+
+    //right side
+    &__title {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        color: aqua;
+        font-weight: 600;
+        font-size: 60px;
+        text-align: center;
+        justify-content: center;
+        line-height: 95px;
+    }
+    &__form {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        padding-top: 40px;
+
+        // I need -- for this but html confuses me - need to study it more
+        .inputBoxes {
+            outline: none;
+            max-width: 500px;
+            background-color: #000;
+            color: #fff;
+            border: 2px solid aqua;
+            border-radius: 10px;
+            font-weight: 300;
+            font-size: 16px;
+            padding: 5px;
+            margin: 25px;
+        }
+        .formCta {
+            background-color: aqua;
+            color: #000;
+            border-radius: 15px;
+            border: none;
+            padding: 10px;
+            transition: 1s;
+        }
+        .formCta:hover {
+            padding: 15px;
+        }
+        .formCta:active{
+            outline: none;
+        }
+    }
+}

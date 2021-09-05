@@ -1,0 +1,75 @@
+.landing {
+    background-image: url(../images/horizontalOneBw.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: peachpuff;
+    min-height: calc(100vh - 50px);
+    padding: 30px 30px 14px 30px;
+
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+    // adding BEM
+    // ok I'm confused, my headers were not working until I wrote them outside od &__content SO, my question is: wouldn't it be working if it WAS inside of content? It looked good in styles.css  | Maybe I missed something but I am a bit confused
+    
+    &__content {
+        // background-color: rgba(127, 255, 212, 0.329);
+        max-width: 95%;
+        height: auto;
+    }
+    &__bothHeadings {
+        background-color: $blue;
+        // border-radius: 5px;
+        padding: 20px;
+        margin: 0 auto;
+        // yess this centers it
+        text-align: center;
+        align-items: center;
+    }
+
+    &__headerOne {
+        // font-weight: 300px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 130px;
+        // super useful for reducing heights between headers
+        line-height: 80px;
+
+        //this one seems unecessary but I'll leave it here to reference back to when I understand this a little better
+        &--color {
+            // or royal blue?
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    &__headerTwo {
+        color: #ffffff;
+        background-color: rgba(0, 195, 202, 0.589);
+        font-weight: 700;
+        font-size: 80px;
+        text-transform: uppercase;
+    }
+    //wouldn't this also go inside of content?
+    &__button {
+        background-color: $pink;
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 25px;
+        border-radius: 10px;
+        display: inline-block;
+        margin-top: 10px;
+        font-weight: normal;
+        text-transform: capitalize;
+        transition: 1s;
+
+        &:hover {
+            background-color: royalblue;
+        }
+    }
+
+
+}

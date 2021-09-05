@@ -1,0 +1,41 @@
+.kim {
+    margin: 0 auto;
+    padding: 30px;
+    // background-color: #ff2;
+    max-width: 90%;
+    min-height: calc(20vh - 50px);
+
+    &__content {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        // background-color: plum;
+        max-width: 98%;
+        height: 250px;
+    }
+
+    &__header {
+        color: $blue;
+    }
+    &__headerAndDesc {
+        height: auto;
+        max-width: 600px;
+        text-align: left;
+    }
+
+    &__img {
+        background-image: url(../images/kimFaceBw.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 120%;
+        // background-color: pink;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+
+
+// need to add resize values
+//why are variables not WORKING 
